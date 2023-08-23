@@ -1,0 +1,17 @@
+{
+  "name": "webworkerfactory",
+  "version": "1.0.0",
+  "description": "A smal library to use webworkers easier",
+  "main": "./dist/WorkerFacotry.js",
+  "type": "module",
+  "directories": {
+    "test": "test",
+    "dist": "dist"
+  },
+  "scripts": {
+    "build": "npx rimraf dist && npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Pfalzgraf <info@josunlp.de>",
+  "license": "MIT"
+}
