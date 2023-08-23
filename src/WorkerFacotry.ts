@@ -159,7 +159,7 @@ export default class WebWorkerWrapper {
    */
   private handleWorkerError(error: any) {
     console.error("Worker error:", error);
-    // Füge hier deine Fehlerbehandlungslogik hinzu, z.B. Pausiere die Worker, informiere den Benutzer usw.
+    //TODO: Handle error
   }
 
   /**
