@@ -159,7 +159,9 @@ export default class WebWorkerWrapper {
    */
   private handleWorkerError(error: any) {
     console.error("Worker error:", error);
-    //TODO: Handle error
+    if (this.errorHandler) {
+      this.errorHandler(error);
+    }
   }
 
   /**
@@ -253,7 +255,7 @@ export default class WebWorkerWrapper {
       }
     }, 1000); // Alle 1 Sekunde
 
-    const cleanup = () => {
+    () => {
       clearInterval(progressInterval);
     };
 
